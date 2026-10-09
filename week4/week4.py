@@ -33,7 +33,7 @@
 #     t.left(90)
 #
 # t.penup()
-# t.goto(30, 0)
+# t.goto(20, 0)
 # t.pendown()
 #
 # for i in range(6):
@@ -41,52 +41,44 @@
 #     t.left(60)
 #
 # t.penup()
-# t.goto(-20, -200)
+# t.goto(0, -200)
 # t.pendown()
 #
 # for i in range(8):
 #     t.forward(50)
 #     t.left(45)
 #
-# screen.exitonclick()
-
-# import turtle
-#
-# t = turtle.Turtle()
-# screen = turtle.Screen()
-#
-# screen.bgcolor("lightgreen")
-# t.shape("turtle")
-# t.color("blue")
-# t.pensize(3)
-# t.stamp()
-#
-# t.penup()
-#
-# for i in range(12):
-#     t.forward(125)
-#     t.pendown()
-#     t.forward(15)
-#
-#     t.penup()
-#     t.forward(25)
-#     t.stamp()
-#     t.backward(165)
-#     t.left(30)
 #
 # screen.exitonclick()
 
 import turtle
 
-pirate = turtle.Turtle()
 screen = turtle.Screen()
+screen.bgcolor("lightgreen")
 
-turns = [160, -43, 270, -97, -43, 200, -940, 17, -86]
+t = turtle.Turtle()
+t.shape("turtle")
+t.color("blue")
+t.pensize(3)
 
-for angle in turns:
-    pirate.left(angle)
-    pirate.forward(100)
+t.stamp()
+t.penup()
 
-print("Pirate final heading:", pirate.heading())
+for i in range(12):
+    t.forward(125)
+    t.pendown()
+    t.forward(15)
+    t.penup()
+    t.forward(25)
+    t.stamp()
+    t.backward(165)
+    t.left(30)
+
 
 screen.exitonclick()
+
+
+
+
+
+
